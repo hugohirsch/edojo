@@ -1,3 +1,6 @@
 plugins/core/
 web-app/WEB-INF
+web-app/WEB-INF/classes
+web-app/plugins/
 target/
+stacktrace.log

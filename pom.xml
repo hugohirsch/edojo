@@ -9,7 +9,7 @@
   <description>Base project to customize and organize your dojo.</description>
   <url>http://www.edojo.org</url>
   <properties>
-    <grails.version>1.3.7</grails.version>
+    <grails.version>2.0.0</grails.version>
   </properties>
   <dependencies>
     <dependency>
@@ -227,6 +227,14 @@
     </dependencies>
   </dependencyManagement>
   <repositories>
+<repository>
+      <id>grails-snap</id>
+      <url>http://snapshots.repository.codehaus.org</url>
+    </repository>
+<repository>
+      <id>grails</id>
+      <url>http://repo.grails.org/grails/core</url>
+    </repository>
     <!-- Required to get hold of javassist:javassist -->
     <repository>
       <id>jboss.org</id>
