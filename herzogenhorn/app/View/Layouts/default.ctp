@@ -84,7 +84,9 @@
             <p><a class="btn btn-primary btn-large">Anmeldung hier &raquo;</a></p>
           </div>
 
+			<span class="label label-success">
 			<?php echo $this->Session->flash(); ?>
+			</span>
 			<?php echo $content_for_layout; ?>
           
 <form class="form-horizontal">
