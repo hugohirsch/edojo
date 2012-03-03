@@ -331,7 +331,7 @@
       <hr>
 
       <footer>
-        <p>&copy; AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?></p>
+        <p>AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?></p>
 	<?php echo $this->element('sql_dump'); ?>
       </footer>
 
