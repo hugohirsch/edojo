@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <?php echo $this->Html->charset(); ?>
-    <title><?php echo __('welcome.title'); ?> - Herzogenhorn Anmeldung</title>
+    <title><?php echo __('welcome.title'); ?></title>
     <meta name="description" content="">
     <meta name="author" content="root" >
 <meta name="robots" content="noindex,nofollow,noarchive">
@@ -15,7 +15,6 @@
     <!-- Le styles -->
     <?php
     		echo $this->Html->meta('icon')."\r\n";
-
     		echo $this->Html->css('bootstrap')."\r\n";
     		echo $this->Html->css('herzogenhorn')."\r\n";
     		echo $this->Html->css('bootstrap-responsive')."\r\n";
@@ -33,7 +32,7 @@
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="img/favicon.ico">
-	 <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -332,7 +331,7 @@
       <hr>
 
       <footer>
-        <p>&copy; AikidoBerlin / KaiShinKan 2012, <?=date("Y-m-d H:i:s")?>, Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+        <p>&copy; AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?></p>
 	<?php echo $this->element('sql_dump'); ?>
       </footer>
 

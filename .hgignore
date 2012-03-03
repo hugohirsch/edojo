@@ -7,3 +7,4 @@ stacktrace.log
 .iml
 .ipr
 .iws
+herzogenhorn/app/tmp/*
