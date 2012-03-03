@@ -216,8 +216,8 @@
             <label class="control-label" for="room">Zimmertyp</label>
             <div class="controls">
               <select id="room">
-                <option>2-Bett Zimmer Dusche und WC</option>
-                <option value="together2">3-Bett Zimmer Dusche und WC</option>
+                <option >2-Bett Zimmer Dusche und WC</option>
+                <option value="together2" selected>3-Bett Zimmer Dusche und WC</option>
               </select>
               <p class="help-block">Bitte die Zimmerkategorie festlegen.</p>
             </div>
