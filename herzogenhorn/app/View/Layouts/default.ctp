@@ -340,11 +340,8 @@
 
       <hr>
 
-      <footer>
-        <p>AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?>, Version: 2.1 - cakephp-cakephp-b522a85</p>
-	<?php echo $this->element('sql_dump'); ?>
-      </footer>
-
+	<!-- render footer in here -->
+	<?php echo $this->element('footer'); ?>
     </div><!--/.fluid-container-->
     
     <!-- Le javascript
@@ -353,7 +350,6 @@
   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <?php
-//    <script src="js/bootstrap.min.js"></script>
     		echo $this->Html->script('bootstrap-min')."\r\n";
     		echo $this->Html->script('bootstrap-button')."\r\n";
     		echo $this->Html->script('bootstrap-tooltip')."\r\n";
