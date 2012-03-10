@@ -18,6 +18,11 @@
     		echo $this->Html->css('bootstrap')."\r\n";
     		echo $this->Html->css('herzogenhorn')."\r\n";
     		echo $this->Html->css('bootstrap-responsive')."\r\n";
+
+                echo $this->fetch('meta');
+                echo $this->fetch('css');
+                echo $this->fetch('script');
+
     ?>
     
     <style type="text/css">
@@ -83,9 +88,14 @@
             <p><a class="btn btn-primary btn-large">Anmeldung hier &raquo;</a></p>
           </div>
 
+			<?php $flashMessage = $this->Session->flash(); ?>
+			<?php if(empty($flashMessage)) { ?> 
+			<?php } else { ?> 
 			<span class="label label-success">
-			<?php echo $this->Session->flash(); ?>
+			<?php echo $flashMessage; ?>
 			</span>
+			<?php } ?> 
+			
 			<?php echo $content_for_layout; ?>
           
 <form class="form-horizontal">
@@ -331,7 +341,7 @@
       <hr>
 
       <footer>
-        <p>AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?></p>
+        <p>AikidoBerlin / KaiShinKan &copy; <?php echo date("Y");?>, Page rendered at <?php echo date("Y-m-d H:i:s"); ?>, Version: 2.1 - cakephp-cakephp-b522a85</p>
 	<?php echo $this->element('sql_dump'); ?>
       </footer>
 
@@ -349,7 +359,9 @@
     		echo $this->Html->script('bootstrap-tooltip')."\r\n";
    		echo $this->Html->script('bootstrap-popover')."\r\n";
    		echo $this->Html->script('application')."\r\n";
+
+                echo $this->fetch('script');
+
     ?>
-	</script>
   </body>
 </html>
