@@ -44,69 +44,34 @@
   </head>
 
   <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Herzogenhorn-Anmeldung</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <p class="navbar-text pull-right">Logged in as <a href="#"><i class="icon-user icon-white"></i>unknown</a></p>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+<?php echo $this->element('menu'); ?>
 
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#"><i class="icon-star"></i>Home</a></li>
-              <li><a href="http://www.tendoryu-aikido.org" target="_blank">Tendoryu Landesverbund Berlin</a></li>
-              <li><a href="http://www.kaishinkan.de" target="_blank"><i class="icon-book"></i>KaiShinKan</a></li>
-<li><a href="http://www.php.net/manual/en/" target="_blank"><i class="icon-book"></i>PHP</a></li>
-              <li><a href="http://www.tendo-world-aikido.de/static/attachments/Ausschreibung_Berlin_2012.pdf" target="_blank">Ausschreibung als PDF</a></li>
-            </ul>
-          </div><!--/.well -->
+        <?php echo $this->element('sidebar'); ?>
         </div><!--/span-->
         <div class="span9">
-        
-          <div class="hero-unit">
+
+            <div class="hero-unit">
             <h1>Begrüßungstexte</h1>
             <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
             <p><a class="btn btn-primary btn-large">Anmeldung hier &raquo;</a></p>
-          </div>
+            </div><!-- .hero-unit -->
 
-			<?php $flashMessage = $this->Session->flash(); ?>
-			<?php if(empty($flashMessage)) { ?> 
-			<?php } else { ?> 
-			<span class="label label-success">
-			<?php echo $flashMessage; ?>
-			</span>
-			<?php } ?> 
-			
+            <?php echo $this->element('flash'); ?>
+						
 			<?php echo $content_for_layout; ?>
           
 <form class="form-horizontal">
         <fieldset>
-          <legend>Lehrgangsauswahl</legend>
+          <legend><?php echo __("Lehrgangsauswahl"); ?></legend>
           <div class="control-group">
             <label class="control-label" for="week">Welche Woche?</label>
             <div class="controls">
               <select id="week">
-                <option>1.Woche - ab Sa, 2012-06-17</option>
-                <option>2.Woche - ab Sa, 2012-06-24</option>
+                <option value="w1">1.Woche - ab Sa, 2012-06-17</option>
+                <option value="w2">2.Woche - ab Sa, 2012-06-24</option>
               </select>
               <p class="help-block">Bitte die gewünschte Lehrgangswoche festlegen.</p>
             </div>
@@ -116,8 +81,8 @@
         <fieldset>
           <legend>Persönliche Daten</legend>
 <!-- class="error" hinzufügen bei Fehlern -->
-          <div class="control-group error">
-            <!-- TODO: on focusLost oben Username eintragen -->
+          <div class="control-group">
+            <?php /* via JS username will be printed in the login block */ ?>
             <label class="control-label" for="vorname">Vorname</label>
             <div class="controls ">
               <input type="text" class="input-xlarge" id="vorname">
@@ -125,9 +90,9 @@
             </div>
 			 </div>
           <div class="control-group">
-            <label class="control-label" for="name">Name</label>
+            <label class="control-label" for="nachname">Name</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="name">
+              <input type="text" class="input-xlarge" id="nachname">
               <p class="help-block">Bitte Name eingeben.</p>
             </div>
 			 </div>
@@ -170,18 +135,25 @@
             <label class="control-label" for="g_day">Geburtsdatum</label>
             <div class="controls">
               <select id="g_day">
-                <option>Tag</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option value="">Tag</option>
+                <?php
+for ($i = 1; $i <= 31; $i++) {
+    echo "<option>".$i."</option>";
+}
+?>
               </select>
               <select id="g_month">
-                <option>Monat</option>
-                <option>Jan</option>
-                <option>Feb</option>
-                <option>Dez</option>
+                <option value="">Monat</option>
+                <?php
+                /** TODO add i18n here 
+                // prints something like: 2000-07-01T00:00:00+00:00
+                echo date(DATE_ATOM, mktime(0, 0, 0, 7, 1, 2000));                
+                */
+                date_default_timezone_set('UTC');
+for ($i = 1; $i <= 12; $i++) {
+    echo "<option>".date("F", mktime(0, 0, 0, $i, 1, 2012))."</option>";
+}
+?>
               </select>
               <input type="text" class="input-xlarge" id="g_year">
               <p class="help-block">Bitte das Geburtsjahr 4stellig eingeben.</p>
@@ -200,10 +172,17 @@
             <label class="control-label" for="gsince_month">Graduiert seit</label>
             <div class="controls">
               <select id="gsince_month">
-                <option>Monat</option>
-                <option>Jan</option>
-                <option>Feb</option>
-                <option>Dez</option>
+                <option value="">Monat</option>
+                <?php
+                /** TODO add i18n here 
+                // prints something like: 2000-07-01T00:00:00+00:00
+                echo date(DATE_ATOM, mktime(0, 0, 0, 7, 1, 2000));                
+                */
+                date_default_timezone_set('UTC');
+for ($i = 1; $i <= 12; $i++) {
+    echo "<option>".date("F", mktime(0, 0, 0, $i, 1, 2012))."</option>";
+}
+?>
               </select>
               <input type="text" class="input-xlarge" id="gsince_year">
               <p class="help-block">Bitte angeben, seit wann die aktuelle Graduierung besteht.</p>
@@ -286,7 +265,8 @@
         </fieldset>
       </form>     
 
-
+<?php
+/*
           <div class="row-fluid">
             <div class="span4">
 
@@ -337,7 +317,8 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-
+*/
+?>
       <hr>
 
 	<!-- render footer in here -->
@@ -353,11 +334,10 @@
     		echo $this->Html->script('bootstrap-min')."\r\n";
     		echo $this->Html->script('bootstrap-button')."\r\n";
     		echo $this->Html->script('bootstrap-tooltip')."\r\n";
-   		echo $this->Html->script('bootstrap-popover')."\r\n";
-   		echo $this->Html->script('application')."\r\n";
+            echo $this->Html->script('bootstrap-popover')."\r\n";
+            echo $this->Html->script('application')."\r\n";
 
-                echo $this->fetch('script');
-
+            echo $this->fetch('script');
     ?>
   </body>
 </html>

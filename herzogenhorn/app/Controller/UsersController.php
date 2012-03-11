@@ -10,6 +10,7 @@ class UsersController extends AppController {
 
     public function view($id = null) {
         $this->User->id = $id;
+	$this->set('activeMenuButton', 'u.view');
         $this->set('user', $this->User->read());
     }
 
@@ -26,6 +27,7 @@ class UsersController extends AppController {
 
    public function edit($id = null) {
     $this->User->id = $id;
+    $this->set('activeMenuButton', 'u.edit');
     if ($this->request->is('get')) {
         $this->request->data = $this->User->read();
     } else {
