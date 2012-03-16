@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Sanitizing workspace before checkin ... "
+echo "Removing php-backup files .."
+find ~/workspace/edojo/herzogenhorn/* | grep php~ | xargs rm
+echo "Removing ctp-backup files .."
+find ~/workspace/edojo/herzogenhorn/* | grep ctp~ | xargs rm
+echo "DONE - ready 4 checkin"
