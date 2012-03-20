@@ -24,9 +24,34 @@ additionals VARCHAR(1024),
 echo $this->Form->create('Applicant', array("class" => "form-horizontal"));
 ?>
         <fieldset>
-          <legend><?php __("common.personaldata"); ?></legend>
+          <legend><?php __("seminar.choose"); ?></legend>
+          <div class="control-group">
+            <label class="control-label" for="week"><?php __("seminar.week"); ?></label>
+            <div class="controls">
 <?php 
-echo $this->Form->input('week');
+        echo $this->Form->input('week', array("label" => false, "class"=>"input-xlarge",
+            'options' => array('horn2012w1' => __("seminar.week1"), 'horn2012w2' => __("seminar.week2"))
+        ));
+?>
+<p class="help-block"><?php __("seminar.choose.label"); ?></p>
+            </div>
+            </div>
+			</fieldset>
+
+        <fieldset>
+          <legend><?php __("common.personaldata"); ?></legend>
+
+          <div class="control-group">
+            <?php /* via JS username will be printed in the login block */ ?>
+            <label class="control-label" for="vorname">Vorname</label>
+            <div class="controls ">
+              <input type="text" class="input-xlarge" id="vorname">
+              <p class="help-block">Bitte Vornamen eingeben.</p>
+            </div>
+
+
+<?php 
+echo $this->Form->input('week', array("label" => false));
 
 echo "\r\n";
 echo "\r\n";

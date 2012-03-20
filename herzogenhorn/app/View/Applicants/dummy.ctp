@@ -1,5 +1,19 @@
 <form class="form-horizontal">
         <fieldset>
+          <legend>Lehrgangsauswahl</legend>
+          <div class="control-group">
+            <label class="control-label" for="week">Welche Woche?</label>
+            <div class="controls">
+              <select id="week">
+                <option value="horn2012w1">1.Woche - ab Sa, 2012-06-17</option>
+                <option value="horn2012w2">2.Woche - ab Sa, 2012-06-24</option>
+              </select>
+              <p class="help-block">Bitte die gewünschte Lehrgangswoche festlegen.</p>
+            </div>
+			 </div>
+			</fieldset>
+
+        <fieldset>
           <legend>Persönliche Daten</legend>
 <!-- class="error" hinzufügen bei Fehlern -->
           <div class="control-group">

@@ -58,9 +58,13 @@ CREATE TABLE IF NOT EXISTS `applicants` (
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(200) COLLATE utf8_bin DEFAULT NULL,
+  `password` varchar(200) COLLATE utf8_bin DEFAULT NULL,
   `firstname` varchar(200) COLLATE utf8_bin DEFAULT NULL,
   `lastname` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `role` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `created` DATETIME DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 

@@ -4,6 +4,25 @@ class ApplicantsController extends AppController {
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
 
+public function isAuthorized($user) {
+    if (parent::isAuthorized($user)) {
+        return true;
+    }
+
+/*
+    if ($this->action === 'add') {
+       // All registered users can add posts
+        return true;
+    }
+    if (in_array($this->action, array('edit', 'delete'))) {
+        $postId = $this->request->params['pass'][0];
+        return $this->Post->isOwnedBy($postId, $user['id']);
+    }
+*/
+    return false;
+}
+
+
     public function index() {
         $this->set('activeMenuButton', 'a.index');
         $this->set('applicants', $this->Applicant->find('all'));
