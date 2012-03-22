@@ -1,5 +1,5 @@
 <!-- File: /app/View/Applicants/add.ctp -->
-<h1><?php echo __("applicants.list"); ?></h1>
+<h1><?php echo __("applicants.add"); ?></h1>
 <?php
 /*
 week VARCHAR(50), 
@@ -24,9 +24,9 @@ additionals VARCHAR(1024),
 echo $this->Form->create('Applicant', array("class" => "form-horizontal"));
 ?>
         <fieldset>
-          <legend><?php __("seminar.choose"); ?></legend>
+          <legend><?php __('seminar.choose'); ?></legend>
           <div class="control-group">
-            <label class="control-label" for="week"><?php __("seminar.week"); ?></label>
+            <label class="control-label" for="week"><?php __('seminar.week'); ?></label>
             <div class="controls">
 <?php 
         echo $this->Form->input('week', array("label" => false, "class"=>"input-xlarge",
@@ -36,40 +36,29 @@ echo $this->Form->create('Applicant', array("class" => "form-horizontal"));
 <p class="help-block"><?php __("seminar.choose.label"); ?></p>
             </div>
             </div>
-			</fieldset>
+        </fieldset>
 
         <fieldset>
           <legend><?php __("common.personaldata"); ?></legend>
 
           <div class="control-group">
             <?php /* via JS username will be printed in the login block */ ?>
-            <label class="control-label" for="vorname">Vorname</label>
+            <label class="control-label" for="vorname"><?php __("firstname"); ?></label>
             <div class="controls ">
-              <input type="text" class="input-xlarge" id="vorname">
-              <p class="help-block">Bitte Vornamen eingeben.</p>
-            </div>
-
-
-<?php 
-echo $this->Form->input('week', array("label" => false));
-
-echo "\r\n";
-echo "\r\n";
-echo "<div class=\"control-group\">";
-echo "<label class=\"control-label\" for=\"vorname\">".__("firstname")."</label>";
-echo "\r\n";
+<?php
 echo $this->Form->input('vorname', array(
-    "div" => array("class" => "controls"),
-    /* TODO p is not inside div as a separate entity - see http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html*/
-    "p" => array("class" => "help-block", "value" => "Bitte Vorname eingeben"),
     "label" => false,
     "class" => "input-xlarge"
 ));
+?>
+            <p class="help-block"><?php __("firstname.label"); ?></p>
+            </div>
+            
 
-echo "\r\n";
-echo "</div>";
-echo "\r\n";
+
+<?php 
 /*
+    see http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
 
             <label class="control-label" for="vorname">Vorname</label>
             <div class="controls ">

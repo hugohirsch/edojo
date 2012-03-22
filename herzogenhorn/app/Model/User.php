@@ -14,12 +14,20 @@ class User extends AppModel {
             'required' => array(
                 'rule' => array('notEmpty'),
                 'message' => 'A username is required'
+            ),
+            'That username is already taken' => array(
+                'rule' => 'isUnique',
+                'message' => 'That username is already taken'
             )
         ),
         'password' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
                 'message' => 'A password is required'
+            ),
+            'Passwords do not match' => array(
+                'rule' => 'matchPasswords',
+                'message' => 'The passwords do not match.'
             )
         ),
         'role' => array(
@@ -31,11 +39,19 @@ class User extends AppModel {
         )
     );
 
+    function matchPasswords($data) {
+        if ($data['password'] == $this->data['User']['password_confirmation']) {
+            return TRUE;
+        } // end if
+        $this->invalidate('password_confirmation', 'The passwords do not match');
+
+    } // end of matchPasswords
+
 public function beforeSave() {
     if (isset($this->data[$this->alias]['password'])) {
         $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
     }
     return true;
-}
+} // end beforeSave
 
 }

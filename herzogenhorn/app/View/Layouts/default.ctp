@@ -19,10 +19,9 @@
     		echo $this->Html->css('herzogenhorn')."\r\n";
     		echo $this->Html->css('bootstrap-responsive')."\r\n";
 
-                echo $this->fetch('meta');
-                echo $this->fetch('css');
-                echo $this->fetch('script');
-
+            echo $this->fetch('meta');
+            echo $this->fetch('css');
+            echo $this->fetch('script');
     ?>
     
     <style type="text/css">
@@ -53,11 +52,21 @@
         </div><!--/span-->
         <div class="span9">
 
+            <?php
+            if(empty($activeMenuButton) || $activeMenuButton != "a.add") {
+                ?>
             <div class="hero-unit">
             <h1>Begrüßungstexte</h1>
             <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Anmeldung hier &raquo;</a></p>
+            <p><?php echo $this->Html->link(
+                "Anmeldung hier &raquo;", array(
+                'controller' => 'applicants', 'action' => 'add'), 
+                array(
+                    "class"=>"btn btn-primary btn-large",
+                    "escape" => false)); ?></p>
             </div><!-- .hero-unit -->
+            <?php
+            } ?>
 
             <?php echo $this->element('flash'); ?>
 						

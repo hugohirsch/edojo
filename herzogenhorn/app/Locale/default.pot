@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-03-03 21:15+0100\n"
+"POT-Creation-Date: 2012-03-22 23:25+0100\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,11 +14,221 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: Controller/ApplicantsController.php:46
+msgid "applicants.save.success"
+msgstr ""
+
+#: Controller/ApplicantsController.php:49
+msgid "applicants.save.error"
+msgstr ""
+
+#: Controller/ApplicantsController.php:76
+msgid "applicants.delete.success"
+msgstr ""
+
+#: Controller/UsersController.php:16
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/UsersController.php:34;54;75
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:42;58
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:45;61
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:78
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:81
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Applicants/add.ctp:2
+#: View/Applicants/index.ctp:2
+msgid "applicants.add"
+msgstr ""
+
+#: View/Applicants/add.ctp:27
+msgid "seminar.choose"
+msgstr ""
+
+#: View/Applicants/add.ctp:29
+msgid "seminar.week"
+msgstr ""
+
+#: View/Applicants/add.ctp:33
+msgid "seminar.week1"
+msgstr ""
+
+#: View/Applicants/add.ctp:33
+msgid "seminar.week2"
+msgstr ""
+
+#: View/Applicants/add.ctp:36
+msgid "seminar.choose.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:42
+msgid "common.personaldata"
+msgstr ""
+
+#: View/Applicants/add.ctp:46
+msgid "firstname"
+msgstr ""
+
+#: View/Applicants/add.ctp:54
+msgid "firstname.label"
+msgstr ""
+
+#: View/Applicants/index.ctp:3
+msgid "applicants.list"
+msgstr ""
+
+#: View/Applicants/index.ctp:6
+msgid "applicants.id"
+msgstr ""
+
+#: View/Applicants/index.ctp:7
+msgid "applicants.week"
+msgstr ""
+
+#: View/Applicants/index.ctp:8
+msgid "applicants.lastname"
+msgstr ""
+
+#: View/Applicants/index.ctp:9
+msgid "applicants.firstname"
+msgstr ""
+
+#: View/Applicants/index.ctp:10
+msgid "applicants.created"
+msgstr ""
+
+#: View/Applicants/index.ctp:11
+msgid "common.actions"
+msgstr ""
+
+#: View/Applicants/index.ctp:27
+msgid "applicants.delete"
+msgstr ""
+
+#: View/Applicants/index.ctp:29
+msgid "common.confirm.delete"
+msgstr ""
+
+#: View/Elements/menu.ctp:10
+msgid "Herzogenhorn-Anmeldung"
+msgstr ""
+
+#: View/Elements/menu.ctp:17
+#: View/Elements/sidebar.ctp:4
+msgid "Home"
+msgstr ""
+
+#: View/Elements/menu.ctp:18
+msgid "About"
+msgstr ""
+
+#: View/Elements/menu.ctp:19
+msgid "Contact"
+msgstr ""
+
+#: View/Elements/menu.ctp:21
+msgid "applicant.form"
+msgstr ""
+
+#: View/Elements/menu.ctp:23
+msgid "user.form"
+msgstr ""
+
+#: View/Elements/menu.ctp:26
+msgid "user.register"
+msgstr ""
+
+#: View/Elements/menu.ctp:28
+msgid "user.logout"
+msgstr ""
+
+#: View/Elements/menu.ctp:30
+msgid "user.login"
+msgstr ""
+
+#: View/Elements/menu.ctp:36
+msgid "Logged in as"
+msgstr ""
+
+#: View/Elements/menu.ctp:36
+msgid "guest"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:3
+msgid "Sidebar"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:5
+msgid "Tendoryu Landesverbund Berlin"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:6
+msgid "KaiShinKan"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:7
+msgid "PHP"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:8
+msgid "PDF-Ausschreibung"
+msgstr ""
+
 #: View/Layouts/default.ctp:5
 msgid "welcome.title"
 msgstr ""
 
-#: webroot/test.php:87
-msgid "Debug setting does not allow access to this url."
+#: View/Users/add.ctp:5
+msgid "Add User"
+msgstr ""
+
+#: View/Users/add.ctp:17
+msgid "Submit"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "user.add"
+msgstr ""
+
+#: View/Users/login.ctp:5
+msgid "Please enter your username and password"
+msgstr ""
+
+#: View/Users/login.ctp:11
+msgid "Login"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "A username is required"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "That username is already taken"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "A password is required"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "The passwords do not match."
+msgstr ""
+
+#: Model/User.php:validation for field role
+msgid "Please enter a valid role"
 msgstr ""
 

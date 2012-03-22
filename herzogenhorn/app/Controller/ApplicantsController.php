@@ -4,17 +4,24 @@ class ApplicantsController extends AppController {
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
 
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('add');
+    }
+
 public function isAuthorized($user) {
     if (parent::isAuthorized($user)) {
         return true;
     }
+    
 
 /*
     if ($this->action === 'add') {
-       // All registered users can add posts
+       // All users can add applicants
         return true;
     }
-    if (in_array($this->action, array('edit', 'delete'))) {
+
+if (in_array($this->action, array('edit', 'delete'))) {
         $postId = $this->request->params['pass'][0];
         return $this->Post->isOwnedBy($postId, $user['id']);
     }
@@ -43,6 +50,7 @@ public function isAuthorized($user) {
                 $this->Session->setFlash(__("applicants.save.error"));
             }
         }
+        $this->set('activeMenuButton', 'a.add');
     }
 
 /* TODO */
