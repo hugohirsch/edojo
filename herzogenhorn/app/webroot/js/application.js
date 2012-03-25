@@ -24,8 +24,8 @@ function adaptUserNameFromForm() {
 
 // blur ginge auch
 // change current user name if not logged in
-var $sourceVorname = $('#vorname');
-var $sourceNachname = $('#nachname');
+var $sourceVorname = $('#ApplicantVorname');
+var $sourceNachname = $('#ApplicantNachname');
 $sourceNachname.focusout(function() {
 $("#unameHead").html($sourceVorname.val() + " " + $sourceNachname.val());
 });
