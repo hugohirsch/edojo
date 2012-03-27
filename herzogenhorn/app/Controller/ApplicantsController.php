@@ -6,7 +6,7 @@ class ApplicantsController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('add');
+        $this->Auth->allow('add', 'dummy');
     }
 
 public function isAuthorized($user) {
@@ -28,6 +28,8 @@ if (in_array($this->action, array('edit', 'delete'))) {
 */
     return false;
 }
+    public function dummy() {
+    }
 
 
     public function index() {
