@@ -8,9 +8,10 @@
         // aktiviere Buttons
         $('.tabs').button();
 
+	// remove one element if only a 2bed room is selected
         $(function(){
             var $visible = $([]);
-            $('#room').change(function(){
+            $('#ApplicantRoom').change(function(){
                 $visible.hide();
                 $visible = $('#' + this.value);
                 $visible.show();

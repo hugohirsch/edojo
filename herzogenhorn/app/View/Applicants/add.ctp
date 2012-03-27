@@ -2,6 +2,10 @@
 <h1><?php echo __("applicants.add"); ?></h1>
 <?php
 /*
+    see http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
+
+Database Structure is:
+
 week VARCHAR(50), 
 vorname VARCHAR(200), 
 nachname VARCHAR(200), 
@@ -135,7 +139,7 @@ echo $this->Form->input('email', array(
            </div>
             
           <div class="control-group">
-            <label class="control-label" for="ApplicantBirthdate"><?php echo __('birthdate'); ?></label>
+            <label class="control-label" for="ApplicantBirthdateYear"><?php echo __('birthdate'); ?></label>
             <div class="controls ">
 <?php
 echo $this->Form->input('birthdate', array(
@@ -175,7 +179,7 @@ echo $this->Form->input('birthdate', array(
             </div>
 
           <div class="control-group">
-            <label class="control-label" for="ApplicantGradingdate"><?php echo __('gradingdate'); ?></label>
+            <label class="control-label" for="ApplicantGradingdateYear"><?php echo __('gradingdate'); ?></label>
             <div class="controls ">
 <?php
 echo $this->Form->input('gradingdate', array(
@@ -185,8 +189,6 @@ echo $this->Form->input('gradingdate', array(
     'maxYear' => date('Y')
     )
 );
-
-
 ?>
             <p class="help-block"><?php echo __('gradingdate.label'); ?></p>
             </div>
@@ -212,23 +214,49 @@ echo $this->Form->input('twano', array(
             <label class="control-label" for="ApplicantRoom"><?php echo __('room'); ?></label>
             <div class="controls ">
 <?php
+/*
+            <select id="room">
+                <option >2-Bett Zimmer Dusche und WC</option>
+                <option value="together22" selected>3-Bett Zimmer Dusche und WC</option>
+              </select>
+*/
 echo $this->Form->input('room', array(
     "label" => false,
-    "class" => "input-xlarge"
+    "class" => false,
+    'default' => '',
+                'options' => array(
+                    'together22' => __("room.3bed"),
+                    '' => __("room.2bed"),
+                ) 
 ));
 ?>
             <p class="help-block"><?php echo __('room.label'); ?></p>
             </div>
            </div>
 
-<?php 
-/*
-    see http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
-
-echo $this->Form->input('together1');
-echo $this->Form->input('together2');
-*/
+          <div class="control-group">
+            <label class="control-label" for="ApplicantTogether1"><?php echo __('room.together.label'); ?></label>
+            <div class="controls ">
+<?php
+echo $this->Form->input('together1', array(
+    "label" => false,
+    "class" => "input-xlarge",
+));
 ?>
+            <p class="help-block"><?php echo __('room.together.label1'); ?></p>
+            </div>
+            
+            <div class="controls " id="together22">
+<?php
+echo $this->Form->input('together2', array(
+    "label" => false,
+    "class" => "input-xlarge",
+));
+?>
+            <p class="help-block"><?php echo __('room.together.label2'); ?></p>
+            </div>
+
+		 </div>
 
           <div class="control-group">
             <label class="control-label"><?php echo __('essen'); ?></label>
@@ -245,9 +273,13 @@ echo $this->Form->input('together2');
 -->
 <?php 
         echo $this->Form->input('essen', array("label" => array("class"=>"radio"),
+            'legend' 	=> false,
+            'type' => 'radio',
+             'default' => 'meat',
             'options' => array(
                 'meat' => __("essen.meat"), 
-                'veg' => __("essen.veg"))
+                'veg' => __("essen.veg")
+            )
         ));
 ?>
             </div>
@@ -269,6 +301,8 @@ echo $this->Form->input('together2');
 <?php 
         echo $this->Form->input('flexible', array("label" => array("class"=>"radio"),
             'type' => 'radio',
+            'legend' 	=> false,            
+            'default' => 'no',
             'options' => array('no' => __("flexible.no"), 'yes' => __("flexible.yes"))
         ));
 ?>

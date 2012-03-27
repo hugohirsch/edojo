@@ -123,10 +123,10 @@
               <p><a class="btn" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
 */
 ?>
+        </div><!--/span-->
+      </div><!--/row-->
       <hr>
 
 	<!-- render footer in here -->
