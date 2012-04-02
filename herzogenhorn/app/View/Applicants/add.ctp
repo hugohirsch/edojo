@@ -124,7 +124,20 @@ echo $this->Form->input('loc', array(
             <p class="help-block"><?php echo __('loc.label'); ?></p>
             </div>
            </div>
-            
+
+          <div class="control-group">
+            <label class="control-label" for="ApplicantDojo"><?php echo __('dojo'); ?></label>
+            <div class="controls ">
+<?php
+echo $this->Form->input('dojo', array(
+    "label" => false,
+    "class" => "input-xlarge"
+));
+?>
+            <p class="help-block"><?php echo __('dojo.label'); ?></p>
+            </div>
+           </div>
+
           <div class="control-group">
             <label class="control-label" for="ApplicantEmail"><?php echo __('email'); ?></label>
             <div class="controls ">

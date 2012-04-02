@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `applicants` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `week` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `dojo` varchar(256) COLLATE utf8_bin DEFAULT NULL,
   `vorname` varchar(200) COLLATE utf8_bin DEFAULT NULL,
   `nachname` varchar(200) COLLATE utf8_bin DEFAULT NULL,
   `street` varchar(250) COLLATE utf8_bin DEFAULT NULL,
