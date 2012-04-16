@@ -1,5 +1,7 @@
 #!/bin/bash
 echo "Ready to create bundle to be deployed live? ... "
+echo -n " [ PRESS any key or Ctrl-C to escape] "
+read
 
 DEPLOY_DIR=~/Desktop/$(date "+%Y%m%d")herzogenhorn_live
 DEPLOY_CACHE_DIR=$DEPLOY_DIR/app/tmp/cache
