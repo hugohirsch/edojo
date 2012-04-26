@@ -1,0 +1,655 @@
+/home/hirsch/jdk/bin/java -Dgrails.home=/home/hirsch/grails -Dbase.dir=/home/hirsch/Documents/workspace/eDojo -Dtools.jar=/home/hirsch/jdk/lib/tools.jar -Dgroovy.starter.conf=/home/hirsch/grails/conf/groovy-starter.conf -Xmx512M -javaagent:/home/hirsch/software/idea-IU-107.777/plugins/GrailsGriffon/lib/groovy_mvc_rt.jar -Dprint.grails.settings=true -Dfile.encoding=UTF-8 -classpath /home/hirsch/grails/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar:/home/hirsch/grails/dist/grails-bootstrap-2.0.0.jar org.codehaus.groovy.grails.cli.support.GrailsStarter --main org.codehaus.groovy.grails.cli.GrailsScriptRunner --conf /home/hirsch/grails/conf/groovy-starter.conf help
+
+| Loading Grails 2.0.0
+| Configuring classpath
+| Configuring classpath.
+| Environment set to development
+| Environment set to development.
+| Environment set to development..
+| Environment set to development...
+| Environment set to development....
+| Environment set to development.....
+
+Usage (optionals marked with *):
+grails [environment]* [target] [arguments]*
+
+Examples:
+grails dev run-app
+grails create-app books
+
+Available Targets (type grails help 'target-name' for more info):
+grails add-proxy
+grails bootstrap
+grails bug-report
+grails clean
+grails clear-proxy
+grails compile
+grails console
+grails create-app
+grails create-controller
+grails create-domain-class
+grails create-filters
+grails create-hibernate-cfg-xml
+grails create-integration-test
+grails create-plugin
+grails create-scaffold-controller
+grails create-script
+grails create-service
+grails create-tag-lib
+grails create-unit-test
+grails dependency-report
+grails doc
+grails generate-all
+grails generate-controller
+grails generate-views
+grails help
+grails init
+grails install-dependency
+grails install-plugin
+grails install-templates
+grails integrate-with
+grails interactive
+grails list-plugin-updates
+grails list-plugins
+grails migrate-docs
+grails package
+grails package-plugin
+grails plugin-info
+grails refresh-dependencies
+grails remove-proxy
+grails run-app
+grails run-script
+grails run-war
+grails schema-export
+grails set-proxy
+grails set-version
+grails shell
+grails stats
+grails test-app
+grails tomcat
+grails uninstall-plugin
+grails upgrade
+grails war
+
+---=== IDEA Grails build settings ===---
+#
+#Mon Dec 19 22:46:59 CET 2011
+grails.project.class.dir=target/classes
+grails.project.test.class.dir=target/test-classes
+grails.project.test.reports.dir=target/test-reports
+Compile.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Compile.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Compile.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Compile.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Compile.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Compile.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Compile.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Compile.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Compile.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Compile.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Compile.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Compile.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Compile.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Compile.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Compile.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Compile.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Compile.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Compile.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Compile.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Compile.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Compile.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Compile.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Compile.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Compile.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Compile.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Compile.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Compile.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Compile.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Compile.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Compile.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Compile.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Compile.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Compile.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Compile.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Compile.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Compile.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Compile.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Compile.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Compile.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Compile.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Compile.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Compile.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Compile.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Compile.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Compile.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Compile.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Compile.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Compile.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Compile.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Compile.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Compile.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Compile.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Compile.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Compile.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Runtime.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Runtime.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Runtime.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Runtime.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Runtime.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Runtime.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Runtime.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Runtime.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Runtime.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Runtime.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Runtime.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Runtime.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Runtime.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Runtime.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Runtime.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Runtime.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Runtime.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Runtime.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Runtime.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Runtime.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Runtime.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Runtime.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Runtime.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Runtime.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Runtime.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Runtime.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Runtime.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Runtime.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Runtime.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Runtime.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Runtime.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Runtime.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Runtime.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Runtime.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Runtime.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Runtime.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Runtime.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Runtime.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Runtime.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Runtime.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Runtime.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Runtime.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Runtime.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Runtime.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Runtime.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Runtime.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Runtime.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Runtime.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Runtime.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Runtime.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Runtime.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Runtime.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Runtime.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Runtime.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Runtime.54=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjweaver/jars/aspectjweaver-1.6.10.jar
+Runtime.55=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjrt/jars/aspectjrt-1.6.10.jar
+Runtime.56=/home/hirsch/.grails/ivy-cache/cglib/cglib/jars/cglib-2.2.jar
+Runtime.57=/home/hirsch/.grails/ivy-cache/asm/asm/jars/asm-3.1.jar
+Runtime.58=/home/hirsch/.grails/ivy-cache/commons-fileupload/commons-fileupload/jars/commons-fileupload-1.2.2.jar
+Runtime.59=/home/hirsch/.grails/ivy-cache/oro/oro/jars/oro-2.0.8.jar
+Runtime.60=/home/hirsch/.grails/ivy-cache/commons-dbcp/commons-dbcp/jars/commons-dbcp-1.4.jar
+Runtime.61=/home/hirsch/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.6.jar
+Runtime.62=/home/hirsch/.grails/ivy-cache/com.h2database/h2/jars/h2-1.2.147.jar
+Runtime.63=/home/hirsch/.grails/ivy-cache/javax.servlet/jstl/jars/jstl-1.1.2.jar
+Runtime.64=/home/hirsch/.grails/ivy-cache/xpp3/xpp3_min/jars/xpp3_min-1.1.4c.jar
+Runtime.65=/home/hirsch/.grails/ivy-cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.4.6.jar
+Runtime.66=/home/hirsch/.grails/ivy-cache/log4j/log4j/bundles/log4j-1.2.16.jar
+Runtime.67=/home/hirsch/.grails/ivy-cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar
+Runtime.68=/home/hirsch/.grails/ivy-cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.6.2.jar
+Runtime.69=/home/hirsch/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar
+Runtime.70=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar
+Runtime.71=/home/hirsch/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar
+Runtime.72=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar
+Runtime.73=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar
+Runtime.74=/home/hirsch/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar
+Runtime.75=/home/hirsch/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar
+Runtime.76=/home/hirsch/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar
+Runtime.77=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar
+Test.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Test.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Test.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Test.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Test.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Test.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Test.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Test.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Test.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Test.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Test.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Test.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Test.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Test.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Test.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Test.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Test.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Test.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Test.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Test.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Test.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Test.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Test.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Test.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Test.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Test.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Test.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Test.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Test.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Test.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Test.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Test.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Test.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Test.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Test.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Test.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Test.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Test.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Test.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Test.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Test.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Test.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Test.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Test.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Test.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Test.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Test.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Test.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Test.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Test.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Test.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Test.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Test.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Test.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Test.54=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjweaver/jars/aspectjweaver-1.6.10.jar
+Test.55=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjrt/jars/aspectjrt-1.6.10.jar
+Test.56=/home/hirsch/.grails/ivy-cache/cglib/cglib/jars/cglib-2.2.jar
+Test.57=/home/hirsch/.grails/ivy-cache/asm/asm/jars/asm-3.1.jar
+Test.58=/home/hirsch/.grails/ivy-cache/commons-fileupload/commons-fileupload/jars/commons-fileupload-1.2.2.jar
+Test.59=/home/hirsch/.grails/ivy-cache/oro/oro/jars/oro-2.0.8.jar
+Test.60=/home/hirsch/.grails/ivy-cache/commons-dbcp/commons-dbcp/jars/commons-dbcp-1.4.jar
+Test.61=/home/hirsch/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.6.jar
+Test.62=/home/hirsch/.grails/ivy-cache/com.h2database/h2/jars/h2-1.2.147.jar
+Test.63=/home/hirsch/.grails/ivy-cache/javax.servlet/jstl/jars/jstl-1.1.2.jar
+Test.64=/home/hirsch/.grails/ivy-cache/xpp3/xpp3_min/jars/xpp3_min-1.1.4c.jar
+Test.65=/home/hirsch/.grails/ivy-cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.4.6.jar
+Test.66=/home/hirsch/.grails/ivy-cache/log4j/log4j/bundles/log4j-1.2.16.jar
+Test.67=/home/hirsch/.grails/ivy-cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar
+Test.68=/home/hirsch/.grails/ivy-cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.6.2.jar
+Test.69=/home/hirsch/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar
+Test.70=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar
+Test.71=/home/hirsch/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar
+Test.72=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar
+Test.73=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar
+Test.74=/home/hirsch/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar
+Test.75=/home/hirsch/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar
+Test.76=/home/hirsch/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar
+Test.77=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar
+Test.78=/home/hirsch/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar
+Test.79=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-testing/jars/grails-plugin-testing-2.0.0.jar
+Test.80=/home/hirsch/.grails/ivy-cache/org.grails/grails-test/jars/grails-test-2.0.0.jar
+Test.81=/home/hirsch/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.0.RELEASE.jar
+Provided.0=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.16.jar
+Provided.1=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.16.jar
+Provided.2=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.16.jar
+Build.0=/home/hirsch/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/bundles/org.springframework.uaa.client-1.0.1.RELEASE.jar
+Build.1=/home/hirsch/.grails/ivy-cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.3.0.jar
+Build.2=/home/hirsch/.grails/ivy-cache/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar
+Build.3=/home/hirsch/.grails/ivy-cache/org.bouncycastle/bcpg-jdk15/jars/bcpg-jdk15-1.45.jar
+Build.4=/home/hirsch/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/jars/bcprov-jdk15-1.45.jar
+Build.5=/home/hirsch/.grails/ivy-cache/org.tmatesoft.svnkit/svnkit/jars/svnkit-1.3.5.jar
+Build.6=/home/hirsch/.grails/ivy-cache/jline/jline/jars/jline-1.0.jar
+Build.7=/home/hirsch/.grails/ivy-cache/org.fusesource.jansi/jansi/jars/jansi-1.2.1.jar
+Build.8=/home/hirsch/.grails/ivy-cache/net.java.dev.jna/jna/jars/jna-3.2.3.jar
+Build.9=/home/hirsch/.grails/ivy-cache/xalan/serializer/jars/serializer-2.7.1.jar
+Build.10=/home/hirsch/.grails/ivy-cache/org.grails/grails-docs/jars/grails-docs-2.0.0.jar
+Build.11=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Build.12=/home/hirsch/.grails/ivy-cache/org.grails/grails-scripts/jars/grails-scripts-2.0.0.jar
+Build.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Build.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Build.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Build.16=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Build.17=/home/hirsch/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.0.RELEASE.jar
+Build.18=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Build.19=/home/hirsch/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar
+Build.20=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant/jars/ant-1.8.2.jar
+Build.21=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.8.2.jar
+Build.22=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-junit/jars/ant-junit-1.8.2.jar
+Build.23=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-trax/jars/ant-trax-1.7.1.jar
+Build.24=/home/hirsch/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.16.jar
+Build.25=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.16.jar
+Build.26=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.16.jar
+Build.27=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.16.jar
+Build.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-tomcat/jars/grails-plugin-tomcat-2.0.0.jar
+---=== End IDEA Grails build settings ===---
+
+/home/hirsch/jdk/bin/java -Dgrails.home=/home/hirsch/grails -Dbase.dir=/home/hirsch/Documents/workspace/eDojo -Dtools.jar=/home/hirsch/jdk/lib/tools.jar -Dgroovy.starter.conf=/home/hirsch/grails/conf/groovy-starter.conf -Xmx512M -javaagent:/home/hirsch/software/idea-IU-107.777/plugins/GrailsGriffon/lib/groovy_mvc_rt.jar -Dprint.grails.settings=true -Dfile.encoding=UTF-8 -classpath /home/hirsch/grails/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar:/home/hirsch/grails/dist/grails-bootstrap-2.0.0.jar org.codehaus.groovy.grails.cli.support.GrailsStarter --main org.codehaus.groovy.grails.cli.GrailsScriptRunner --conf /home/hirsch/grails/conf/groovy-starter.conf help
+
+| Loading Grails 2.0.0
+| Configuring classpath
+| Configuring classpath.
+| Environment set to development
+| Environment set to development.
+| Environment set to development..
+| Environment set to development...
+| Environment set to development....
+| Environment set to development.....
+
+Usage (optionals marked with *):
+grails [environment]* [target] [arguments]*
+
+Examples:
+grails dev run-app
+grails create-app books
+
+Available Targets (type grails help 'target-name' for more info):
+grails add-proxy
+grails bootstrap
+grails bug-report
+grails clean
+grails clear-proxy
+grails compile
+grails console
+grails create-app
+grails create-controller
+grails create-domain-class
+grails create-filters
+grails create-hibernate-cfg-xml
+grails create-integration-test
+grails create-plugin
+grails create-scaffold-controller
+grails create-script
+grails create-service
+grails create-tag-lib
+grails create-unit-test
+grails dependency-report
+grails doc
+grails generate-all
+grails generate-controller
+grails generate-views
+grails help
+grails init
+grails install-dependency
+grails install-plugin
+grails install-templates
+grails integrate-with
+grails interactive
+grails list-plugin-updates
+grails list-plugins
+grails migrate-docs
+grails package
+grails package-plugin
+grails plugin-info
+grails refresh-dependencies
+grails remove-proxy
+grails run-app
+grails run-script
+grails run-war
+grails schema-export
+grails set-proxy
+grails set-version
+grails shell
+grails stats
+grails test-app
+grails tomcat
+grails uninstall-plugin
+grails upgrade
+grails war
+
+---=== IDEA Grails build settings ===---
+#
+#Mon Dec 19 22:57:03 CET 2011
+grails.project.class.dir=target/classes
+grails.project.test.class.dir=target/test-classes
+grails.project.test.reports.dir=target/test-reports
+Compile.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Compile.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Compile.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Compile.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Compile.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Compile.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Compile.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Compile.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Compile.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Compile.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Compile.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Compile.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Compile.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Compile.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Compile.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Compile.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Compile.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Compile.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Compile.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Compile.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Compile.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Compile.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Compile.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Compile.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Compile.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Compile.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Compile.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Compile.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Compile.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Compile.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Compile.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Compile.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Compile.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Compile.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Compile.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Compile.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Compile.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Compile.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Compile.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Compile.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Compile.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Compile.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Compile.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Compile.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Compile.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Compile.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Compile.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Compile.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Compile.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Compile.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Compile.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Compile.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Compile.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Compile.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Runtime.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Runtime.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Runtime.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Runtime.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Runtime.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Runtime.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Runtime.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Runtime.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Runtime.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Runtime.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Runtime.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Runtime.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Runtime.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Runtime.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Runtime.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Runtime.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Runtime.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Runtime.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Runtime.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Runtime.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Runtime.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Runtime.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Runtime.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Runtime.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Runtime.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Runtime.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Runtime.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Runtime.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Runtime.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Runtime.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Runtime.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Runtime.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Runtime.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Runtime.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Runtime.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Runtime.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Runtime.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Runtime.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Runtime.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Runtime.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Runtime.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Runtime.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Runtime.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Runtime.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Runtime.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Runtime.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Runtime.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Runtime.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Runtime.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Runtime.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Runtime.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Runtime.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Runtime.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Runtime.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Runtime.54=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjweaver/jars/aspectjweaver-1.6.10.jar
+Runtime.55=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjrt/jars/aspectjrt-1.6.10.jar
+Runtime.56=/home/hirsch/.grails/ivy-cache/cglib/cglib/jars/cglib-2.2.jar
+Runtime.57=/home/hirsch/.grails/ivy-cache/asm/asm/jars/asm-3.1.jar
+Runtime.58=/home/hirsch/.grails/ivy-cache/commons-fileupload/commons-fileupload/jars/commons-fileupload-1.2.2.jar
+Runtime.59=/home/hirsch/.grails/ivy-cache/oro/oro/jars/oro-2.0.8.jar
+Runtime.60=/home/hirsch/.grails/ivy-cache/commons-dbcp/commons-dbcp/jars/commons-dbcp-1.4.jar
+Runtime.61=/home/hirsch/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.6.jar
+Runtime.62=/home/hirsch/.grails/ivy-cache/com.h2database/h2/jars/h2-1.2.147.jar
+Runtime.63=/home/hirsch/.grails/ivy-cache/javax.servlet/jstl/jars/jstl-1.1.2.jar
+Runtime.64=/home/hirsch/.grails/ivy-cache/xpp3/xpp3_min/jars/xpp3_min-1.1.4c.jar
+Runtime.65=/home/hirsch/.grails/ivy-cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.4.6.jar
+Runtime.66=/home/hirsch/.grails/ivy-cache/log4j/log4j/bundles/log4j-1.2.16.jar
+Runtime.67=/home/hirsch/.grails/ivy-cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar
+Runtime.68=/home/hirsch/.grails/ivy-cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.6.2.jar
+Runtime.69=/home/hirsch/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar
+Runtime.70=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar
+Runtime.71=/home/hirsch/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar
+Runtime.72=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar
+Runtime.73=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar
+Runtime.74=/home/hirsch/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar
+Runtime.75=/home/hirsch/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar
+Runtime.76=/home/hirsch/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar
+Runtime.77=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar
+Test.0=/home/hirsch/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.8.4.jar
+Test.1=/home/hirsch/.grails/ivy-cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar
+Test.2=/home/hirsch/.grails/ivy-cache/commons-el/commons-el/jars/commons-el-1.0.jar
+Test.3=/home/hirsch/.grails/ivy-cache/commons-validator/commons-validator/jars/commons-validator-1.3.1.jar
+Test.4=/home/hirsch/.grails/ivy-cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar
+Test.5=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Test.6=/home/hirsch/.grails/ivy-cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar
+Test.7=/home/hirsch/.grails/ivy-cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar
+Test.8=/home/hirsch/.grails/ivy-cache/commons-io/commons-io/jars/commons-io-2.1.jar
+Test.9=/home/hirsch/.grails/ivy-cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar
+Test.10=/home/hirsch/.grails/ivy-cache/javax.transaction/jta/jars/jta-1.1.jar
+Test.11=/home/hirsch/.grails/ivy-cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+Test.12=/home/hirsch/.grails/ivy-cache/opensymphony/sitemesh/jars/sitemesh-2.4.jar
+Test.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Test.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Test.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-crud/jars/grails-crud-2.0.0.jar
+Test.16=/home/hirsch/.grails/ivy-cache/org.grails/grails-hibernate/jars/grails-hibernate-2.0.0.jar
+Test.17=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Test.18=/home/hirsch/.grails/ivy-cache/org.grails/grails-spring/jars/grails-spring-2.0.0.jar
+Test.19=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Test.20=/home/hirsch/.grails/ivy-cache/org.grails/grails-logging/jars/grails-logging-2.0.0.jar
+Test.21=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-codecs/jars/grails-plugin-codecs-2.0.0.jar
+Test.22=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-controllers/jars/grails-plugin-controllers-2.0.0.jar
+Test.23=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-domain-class/jars/grails-plugin-domain-class-2.0.0.jar
+Test.24=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-converters/jars/grails-plugin-converters-2.0.0.jar
+Test.25=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-datasource/jars/grails-plugin-datasource-2.0.0.jar
+Test.26=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-filters/jars/grails-plugin-filters-2.0.0.jar
+Test.27=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-gsp/jars/grails-plugin-gsp-2.0.0.jar
+Test.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-i18n/jars/grails-plugin-i18n-2.0.0.jar
+Test.29=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-log4j/jars/grails-plugin-log4j-2.0.0.jar
+Test.30=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-scaffolding/jars/grails-plugin-scaffolding-2.0.0.jar
+Test.31=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-services/jars/grails-plugin-services-2.0.0.jar
+Test.32=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-servlets/jars/grails-plugin-servlets-2.0.0.jar
+Test.33=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-mimetypes/jars/grails-plugin-mimetypes-2.0.0.jar
+Test.34=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-url-mappings/jars/grails-plugin-url-mappings-2.0.0.jar
+Test.35=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-validation/jars/grails-plugin-validation-2.0.0.jar
+Test.36=/home/hirsch/.grails/ivy-cache/org.springframework/spring-core/jars/spring-core-3.1.0.RELEASE.jar
+Test.37=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aop/jars/spring-aop-3.1.0.RELEASE.jar
+Test.38=/home/hirsch/.grails/ivy-cache/org.springframework/spring-aspects/jars/spring-aspects-3.1.0.RELEASE.jar
+Test.39=/home/hirsch/.grails/ivy-cache/org.springframework/spring-asm/jars/spring-asm-3.1.0.RELEASE.jar
+Test.40=/home/hirsch/.grails/ivy-cache/org.springframework/spring-beans/jars/spring-beans-3.1.0.RELEASE.jar
+Test.41=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context/jars/spring-context-3.1.0.RELEASE.jar
+Test.42=/home/hirsch/.grails/ivy-cache/org.springframework/spring-context-support/jars/spring-context-support-3.1.0.RELEASE.jar
+Test.43=/home/hirsch/.grails/ivy-cache/org.springframework/spring-expression/jars/spring-expression-3.1.0.RELEASE.jar
+Test.44=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jdbc/jars/spring-jdbc-3.1.0.RELEASE.jar
+Test.45=/home/hirsch/.grails/ivy-cache/org.springframework/spring-jms/jars/spring-jms-3.1.0.RELEASE.jar
+Test.46=/home/hirsch/.grails/ivy-cache/org.springframework/spring-orm/jars/spring-orm-3.1.0.RELEASE.jar
+Test.47=/home/hirsch/.grails/ivy-cache/org.springframework/spring-tx/jars/spring-tx-3.1.0.RELEASE.jar
+Test.48=/home/hirsch/.grails/ivy-cache/org.springframework/spring-web/jars/spring-web-3.1.0.RELEASE.jar
+Test.49=/home/hirsch/.grails/ivy-cache/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.0.RELEASE.jar
+Test.50=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Test.51=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-gorm/jars/grails-datastore-gorm-1.0.0.RELEASE.jar
+Test.52=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-core/jars/grails-datastore-core-1.0.0.RELEASE.jar
+Test.53=/home/hirsch/.grails/ivy-cache/org.grails/grails-datastore-simple/jars/grails-datastore-simple-1.0.0.RELEASE.jar
+Test.54=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjweaver/jars/aspectjweaver-1.6.10.jar
+Test.55=/home/hirsch/.grails/ivy-cache/org.aspectj/aspectjrt/jars/aspectjrt-1.6.10.jar
+Test.56=/home/hirsch/.grails/ivy-cache/cglib/cglib/jars/cglib-2.2.jar
+Test.57=/home/hirsch/.grails/ivy-cache/asm/asm/jars/asm-3.1.jar
+Test.58=/home/hirsch/.grails/ivy-cache/commons-fileupload/commons-fileupload/jars/commons-fileupload-1.2.2.jar
+Test.59=/home/hirsch/.grails/ivy-cache/oro/oro/jars/oro-2.0.8.jar
+Test.60=/home/hirsch/.grails/ivy-cache/commons-dbcp/commons-dbcp/jars/commons-dbcp-1.4.jar
+Test.61=/home/hirsch/.grails/ivy-cache/commons-pool/commons-pool/jars/commons-pool-1.5.6.jar
+Test.62=/home/hirsch/.grails/ivy-cache/com.h2database/h2/jars/h2-1.2.147.jar
+Test.63=/home/hirsch/.grails/ivy-cache/javax.servlet/jstl/jars/jstl-1.1.2.jar
+Test.64=/home/hirsch/.grails/ivy-cache/xpp3/xpp3_min/jars/xpp3_min-1.1.4c.jar
+Test.65=/home/hirsch/.grails/ivy-cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.4.6.jar
+Test.66=/home/hirsch/.grails/ivy-cache/log4j/log4j/bundles/log4j-1.2.16.jar
+Test.67=/home/hirsch/.grails/ivy-cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2.jar
+Test.68=/home/hirsch/.grails/ivy-cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.6.2.jar
+Test.69=/home/hirsch/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.6.2.jar
+Test.70=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-core/jars/hibernate-core-3.6.7.Final.jar
+Test.71=/home/hirsch/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar
+Test.72=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-commons-annotations/jars/hibernate-commons-annotations-3.2.0.Final.jar
+Test.73=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-validator/jars/hibernate-validator-4.1.0.Final.jar
+Test.74=/home/hirsch/.grails/ivy-cache/javax.validation/validation-api/jars/validation-api-1.0.0.GA.jar
+Test.75=/home/hirsch/.grails/ivy-cache/javassist/javassist/jars/javassist-3.12.0.GA.jar
+Test.76=/home/hirsch/.grails/ivy-cache/dom4j/dom4j/jars/dom4j-1.6.1.jar
+Test.77=/home/hirsch/.grails/ivy-cache/org.hibernate/hibernate-ehcache/jars/hibernate-ehcache-3.6.7.Final.jar
+Test.78=/home/hirsch/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar
+Test.79=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-testing/jars/grails-plugin-testing-2.0.0.jar
+Test.80=/home/hirsch/.grails/ivy-cache/org.grails/grails-test/jars/grails-test-2.0.0.jar
+Test.81=/home/hirsch/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.0.RELEASE.jar
+Provided.0=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.16.jar
+Provided.1=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.16.jar
+Provided.2=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.16.jar
+Build.0=/home/hirsch/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/bundles/org.springframework.uaa.client-1.0.1.RELEASE.jar
+Build.1=/home/hirsch/.grails/ivy-cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.3.0.jar
+Build.2=/home/hirsch/.grails/ivy-cache/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar
+Build.3=/home/hirsch/.grails/ivy-cache/org.bouncycastle/bcpg-jdk15/jars/bcpg-jdk15-1.45.jar
+Build.4=/home/hirsch/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/jars/bcprov-jdk15-1.45.jar
+Build.5=/home/hirsch/.grails/ivy-cache/org.tmatesoft.svnkit/svnkit/jars/svnkit-1.3.5.jar
+Build.6=/home/hirsch/.grails/ivy-cache/jline/jline/jars/jline-1.0.jar
+Build.7=/home/hirsch/.grails/ivy-cache/org.fusesource.jansi/jansi/jars/jansi-1.2.1.jar
+Build.8=/home/hirsch/.grails/ivy-cache/net.java.dev.jna/jna/jars/jna-3.2.3.jar
+Build.9=/home/hirsch/.grails/ivy-cache/xalan/serializer/jars/serializer-2.7.1.jar
+Build.10=/home/hirsch/.grails/ivy-cache/org.grails/grails-docs/jars/grails-docs-2.0.0.jar
+Build.11=/home/hirsch/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.0.0.jar
+Build.12=/home/hirsch/.grails/ivy-cache/org.grails/grails-scripts/jars/grails-scripts-2.0.0.jar
+Build.13=/home/hirsch/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.0.0.jar
+Build.14=/home/hirsch/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.0.0.jar
+Build.15=/home/hirsch/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.0.0.jar
+Build.16=/home/hirsch/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar
+Build.17=/home/hirsch/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.0.RELEASE.jar
+Build.18=/home/hirsch/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar
+Build.19=/home/hirsch/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar
+Build.20=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant/jars/ant-1.8.2.jar
+Build.21=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.8.2.jar
+Build.22=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-junit/jars/ant-junit-1.8.2.jar
+Build.23=/home/hirsch/.grails/ivy-cache/org.apache.ant/ant-trax/jars/ant-trax-1.7.1.jar
+Build.24=/home/hirsch/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.16.jar
+Build.25=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.16.jar
+Build.26=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.16.jar
+Build.27=/home/hirsch/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.16.jar
+Build.28=/home/hirsch/.grails/ivy-cache/org.grails/grails-plugin-tomcat/jars/grails-plugin-tomcat-2.0.0.jar
+---=== End IDEA Grails build settings ===---
+
+

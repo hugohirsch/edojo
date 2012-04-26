@@ -1,0 +1,26 @@
+#!/bin/bash
+echo "Ready to create bundle to be deployed live? ... "
+echo -n " [ PRESS any key or Ctrl-C to escape] "
+read
+
+DEPLOY_DIR=~/Desktop/$(date "+%Y%m%d")herzogenhorn_live
+DEPLOY_CACHE_DIR=$DEPLOY_DIR/app/tmp/cache
+#WORKSPACE_DIR=~/Documents/workspace/eDojo/herzogenhorn
+WORKSPACE_DIR=~/workspace/edojo/herzogenhorn
+CONFIG_DIR=~/Desktop/herzogenhorn_config
+
+echo "1. Cleaning up $DEPLOY_DIR ..."
+rm -rf $DEPLOY_DIR > /dev/null
+echo "2. Creating $DEPLOY_DIR ..."
+mkdir $DEPLOY_DIR > /dev/null
+echo "3. Copying workspace $WORKSPACE_DIR to $DEPLOY_DIR ..."
+cp -r $WORKSPACE_DIR/ $DEPLOY_DIR > /dev/null
+echo "4. Merging live config from safe location $CONFIG_DIR"
+cp -r $CONFIG_DIR/* $DEPLOY_DIR > /dev/null
+# echo "Changing tmp permissions in $DEPLOY_CACHE_DIR."
+# chmod 755 $DEPLOY_CACHE_DIR > /dev/null
+# echo "Changing ownership to Apache user"
+# chown -R www-data:www-data /var/www > /dev/null
+echo -e "DONE - scp this to the live servers: \n $DEPLOY_DIR"
+echo -e "Do not forget to adapt ownership of files and set tmp permissions to 755 ($DEPLOY_CACHE_DIR)"
+

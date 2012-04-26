@@ -1,0 +1,422 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-04-09 21:21+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ApplicantsController.php:49
+msgid "applicants.save.success"
+msgstr ""
+
+#: Controller/ApplicantsController.php:52
+msgid "applicants.save.error"
+msgstr ""
+
+#: Controller/ApplicantsController.php:79
+msgid "applicants.delete.success"
+msgstr ""
+
+#: Controller/UsersController.php:16
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/UsersController.php:34;54;75
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:42;58
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:45;61
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:78
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:81
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Applicants/add.ctp:2
+#: View/Applicants/index.ctp:2
+msgid "applicants.add"
+msgstr ""
+
+#: View/Applicants/add.ctp:31
+msgid "seminar.choose"
+msgstr ""
+
+#: View/Applicants/add.ctp:33
+msgid "seminar.week"
+msgstr ""
+
+#: View/Applicants/add.ctp:37
+msgid "seminar.week1"
+msgstr ""
+
+#: View/Applicants/add.ctp:37
+msgid "seminar.week2"
+msgstr ""
+
+#: View/Applicants/add.ctp:40
+msgid "seminar.choose.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:46
+msgid "common.personaldata"
+msgstr ""
+
+#: View/Applicants/add.ctp:50
+msgid "firstname"
+msgstr ""
+
+#: View/Applicants/add.ctp:58
+msgid "firstname.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:64
+msgid "lastname"
+msgstr ""
+
+#: View/Applicants/add.ctp:72
+msgid "lastname.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:77
+msgid "street"
+msgstr ""
+
+#: View/Applicants/add.ctp:85
+msgid "street.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:90
+msgid "houseno"
+msgstr ""
+
+#: View/Applicants/add.ctp:98
+msgid "houseno.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:103
+msgid "plz"
+msgstr ""
+
+#: View/Applicants/add.ctp:111
+msgid "plz.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:116
+msgid "loc"
+msgstr ""
+
+#: View/Applicants/add.ctp:124
+msgid "loc.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:129
+msgid "dojo"
+msgstr ""
+
+#: View/Applicants/add.ctp:137
+msgid "dojo.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:142
+msgid "email"
+msgstr ""
+
+#: View/Applicants/add.ctp:150
+msgid "email.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:155
+msgid "birthdate"
+msgstr ""
+
+#: View/Applicants/add.ctp:166
+msgid "birthdate.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:171
+msgid "grad"
+msgstr ""
+
+#: View/Applicants/add.ctp:176
+msgid "kyu5"
+msgstr ""
+
+#: View/Applicants/add.ctp:177
+msgid "kyu4"
+msgstr ""
+
+#: View/Applicants/add.ctp:178
+msgid "kyu3"
+msgstr ""
+
+#: View/Applicants/add.ctp:179
+msgid "kyu2"
+msgstr ""
+
+#: View/Applicants/add.ctp:180
+msgid "kyu1"
+msgstr ""
+
+#: View/Applicants/add.ctp:181
+msgid "dan1"
+msgstr ""
+
+#: View/Applicants/add.ctp:182
+msgid "dan2"
+msgstr ""
+
+#: View/Applicants/add.ctp:183
+msgid "dan3"
+msgstr ""
+
+#: View/Applicants/add.ctp:184
+msgid "dan4"
+msgstr ""
+
+#: View/Applicants/add.ctp:185
+msgid "dan5"
+msgstr ""
+
+#: View/Applicants/add.ctp:186
+msgid "dan6"
+msgstr ""
+
+#: View/Applicants/add.ctp:190
+msgid "grad.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:195
+msgid "gradingdate"
+msgstr ""
+
+#: View/Applicants/add.ctp:206
+msgid "gradingdate.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:211
+msgid "twano"
+msgstr ""
+
+#: View/Applicants/add.ctp:219
+msgid "twano.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:225
+msgid "accomodation.data"
+msgstr ""
+
+#: View/Applicants/add.ctp:227
+msgid "room"
+msgstr ""
+
+#: View/Applicants/add.ctp:241
+msgid "room.3bed"
+msgstr ""
+
+#: View/Applicants/add.ctp:242
+msgid "room.2bed"
+msgstr ""
+
+#: View/Applicants/add.ctp:246
+msgid "room.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:251
+msgid "room.together.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:259
+msgid "room.together.label1"
+msgstr ""
+
+#: View/Applicants/add.ctp:269
+msgid "room.together.label2"
+msgstr ""
+
+#: View/Applicants/add.ctp:275
+msgid "essen"
+msgstr ""
+
+#: View/Applicants/add.ctp:293
+msgid "essen.meat"
+msgstr ""
+
+#: View/Applicants/add.ctp:294
+msgid "essen.veg"
+msgstr ""
+
+#: View/Applicants/add.ctp:302
+msgid "flexible"
+msgstr ""
+
+#: View/Applicants/add.ctp:319
+msgid "flexible.no"
+msgstr ""
+
+#: View/Applicants/add.ctp:319
+msgid "flexible.yes"
+msgstr ""
+
+#: View/Applicants/add.ctp:326
+msgid "additionals"
+msgstr ""
+
+#: View/Applicants/index.ctp:3
+msgid "applicants.list"
+msgstr ""
+
+#: View/Applicants/index.ctp:6
+msgid "applicants.id"
+msgstr ""
+
+#: View/Applicants/index.ctp:7
+msgid "applicants.week"
+msgstr ""
+
+#: View/Applicants/index.ctp:8
+msgid "applicants.lastname"
+msgstr ""
+
+#: View/Applicants/index.ctp:9
+msgid "applicants.firstname"
+msgstr ""
+
+#: View/Applicants/index.ctp:10
+msgid "applicants.created"
+msgstr ""
+
+#: View/Applicants/index.ctp:11
+msgid "common.actions"
+msgstr ""
+
+#: View/Applicants/index.ctp:27
+msgid "applicants.delete"
+msgstr ""
+
+#: View/Applicants/index.ctp:29
+msgid "common.confirm.delete"
+msgstr ""
+
+#: View/Elements/menu.ctp:10
+msgid "Herzogenhorn-Anmeldung"
+msgstr ""
+
+#: View/Elements/menu.ctp:17
+#: View/Elements/sidebar.ctp:4
+msgid "Home"
+msgstr ""
+
+#: View/Elements/menu.ctp:18
+msgid "About"
+msgstr ""
+
+#: View/Elements/menu.ctp:19
+msgid "Contact"
+msgstr ""
+
+#: View/Elements/menu.ctp:21
+msgid "applicant.form"
+msgstr ""
+
+#: View/Elements/menu.ctp:25
+msgid "user.logout"
+msgstr ""
+
+#: View/Elements/menu.ctp:27
+msgid "user.form"
+msgstr ""
+
+#: View/Elements/menu.ctp:30
+msgid "user.register"
+msgstr ""
+
+#: View/Elements/menu.ctp:32
+msgid "user.login"
+msgstr ""
+
+#: View/Elements/menu.ctp:39
+msgid "Logged in as"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:3
+msgid "Sidebar"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:5
+msgid "Tendoryu Landesverbund Berlin"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:6
+msgid "KaiShinKan"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:7
+msgid "PHP"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:8
+msgid "PDF-Ausschreibung"
+msgstr ""
+
+#: View/Layouts/default.ctp:5
+msgid "welcome.title"
+msgstr ""
+
+#: View/Users/add.ctp:5
+msgid "Add User"
+msgstr ""
+
+#: View/Users/add.ctp:17
+msgid "Submit"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "user.add"
+msgstr ""
+
+#: View/Users/login.ctp:5
+msgid "Please enter your username and password"
+msgstr ""
+
+#: View/Users/login.ctp:11
+msgid "Login"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "A username is required"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "That username is already taken"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "A password is required"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "The passwords do not match."
+msgstr ""
+
+#: Model/User.php:validation for field role
+msgid "Please enter a valid role"
+msgstr ""
+

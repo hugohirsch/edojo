@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Run as sudo ... "
+echo "Copying workspace to www-root..."
+cp -r ~/workspace/edojo/herzogenhorn/* /var/www > /dev/null
+echo "Changing tmp permissions."
+chmod 755 /var/www/app/tmp/cache > /dev/null
+echo "Changing ownership to Apache user"
+chown -R www-data:www-data /var/www > /dev/null
+echo "DONE - localhost is up"

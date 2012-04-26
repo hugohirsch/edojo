@@ -1,0 +1,28 @@
+2012-02-21 20:41:00 Error: [MissingViewException] View file "/var/www/app/View/Users/index.ctp" is missing.
+#0 /var/www/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(40): require('/var/www/app/we...')
+#6 {main}
+2012-02-21 20:53:01 Error: [MissingActionException] Action UsersController::ad() could not be found.
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(40): require('/var/www/app/we...')
+#4 {main}
+2012-02-21 21:45:02 Error: [MissingViewException] View file "/var/www/app/View/Users/edit.ctp" is missing.
+#0 /var/www/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /var/www/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /var/www/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /var/www/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/index.php(40): require('/var/www/app/we...')
+#6 {main}
+2012-02-21 21:55:20 Error: [MissingActionException] Action UsersController::display() could not be found.
+#0 /var/www/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/index.php(40): require('/var/www/app/we...')
+#4 {main}
