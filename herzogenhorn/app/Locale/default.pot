@@ -1,386 +1,422 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-03-22 22:57+0100\n"
-"PO-Revision-Date: 2012-03-22 23:22+0100\n"
-"Last-Translator: \n"
-"Language-Team: German <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-04-09 21:21+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/ApplicantsController.php:46
-msgid "applicants.save.success"
-msgstr "Anmeldung abgespeichert"
-
 #: Controller/ApplicantsController.php:49
-msgid "applicants.save.error"
-msgstr "Fehler beim Speichern"
+msgid "applicants.save.success"
+msgstr ""
 
-#: Controller/ApplicantsController.php:75
+#: Controller/ApplicantsController.php:52
+msgid "applicants.save.error"
+msgstr ""
+
+#: Controller/ApplicantsController.php:79
 msgid "applicants.delete.success"
-msgstr "Anmeldung wurde gelöscht"
+msgstr ""
 
 #: Controller/UsersController.php:16
 msgid "Invalid username or password, try again"
-msgstr "Anmeldung fehlgeschlagen, nochmal probieren."
+msgstr ""
 
 #: Controller/UsersController.php:34;54;75
 msgid "Invalid user"
-msgstr "Ungültiger Nutzer"
+msgstr ""
 
 #: Controller/UsersController.php:42;58
 msgid "The user has been saved"
-msgstr "Nutzer wurde gespeichert"
+msgstr ""
 
 #: Controller/UsersController.php:45;61
 msgid "The user could not be saved. Please, try again."
-msgstr "Nuzer konnte nicht gespeichert werden."
+msgstr ""
 
 #: Controller/UsersController.php:78
 msgid "User deleted"
-msgstr "Nutzer wurde gelöscht"
+msgstr ""
 
 #: Controller/UsersController.php:81
 msgid "User was not deleted"
-msgstr "Nutzer konnte nicht gelöscht werden."
+msgstr ""
 
 #: View/Applicants/add.ctp:2
-#: View/Applicants/index.ctp:3
-msgid "applicants.list"
-msgstr "Anmeldungen auflisten"
-
-#: View/Applicants/add.ctp:27
-msgid "seminar.choose"
-msgstr "Seminarauswahl"
-
-#: View/Applicants/add.ctp:29
-msgid "seminar.week"
-msgstr "Welche Woche?"
-
-#: View/Applicants/add.ctp:33
-msgid "seminar.week1"
-msgstr "Woche 1: ab 2012-06-17"
-
-#: View/Applicants/add.ctp:33
-msgid "seminar.week2"
-msgstr "Woche 2: ab 2012-06-24"
-
-#: View/Applicants/add.ctp:36
-msgid "seminar.choose.label"
-msgstr "Lehrgangswoche auswählen"
-
-#: View/Applicants/add.ctp:42
-msgid "common.personaldata"
-msgstr "Persönliche Daten"
-
-#: View/Applicants/add.ctp:64
-msgid "firstname"
-msgstr "Vorname"
-
 #: View/Applicants/index.ctp:2
 msgid "applicants.add"
-msgstr "Hinzufügen"
+msgstr ""
+
+#: View/Applicants/add.ctp:31
+msgid "seminar.choose"
+msgstr ""
+
+#: View/Applicants/add.ctp:33
+msgid "seminar.week"
+msgstr ""
+
+#: View/Applicants/add.ctp:37
+msgid "seminar.week1"
+msgstr ""
+
+#: View/Applicants/add.ctp:37
+msgid "seminar.week2"
+msgstr ""
+
+#: View/Applicants/add.ctp:40
+msgid "seminar.choose.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:46
+msgid "common.personaldata"
+msgstr ""
+
+#: View/Applicants/add.ctp:50
+msgid "firstname"
+msgstr ""
+
+#: View/Applicants/add.ctp:58
+msgid "firstname.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:64
+msgid "lastname"
+msgstr ""
+
+#: View/Applicants/add.ctp:72
+msgid "lastname.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:77
+msgid "street"
+msgstr ""
+
+#: View/Applicants/add.ctp:85
+msgid "street.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:90
+msgid "houseno"
+msgstr ""
+
+#: View/Applicants/add.ctp:98
+msgid "houseno.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:103
+msgid "plz"
+msgstr ""
+
+#: View/Applicants/add.ctp:111
+msgid "plz.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:116
+msgid "loc"
+msgstr ""
+
+#: View/Applicants/add.ctp:124
+msgid "loc.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:129
+msgid "dojo"
+msgstr ""
+
+#: View/Applicants/add.ctp:137
+msgid "dojo.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:142
+msgid "email"
+msgstr ""
+
+#: View/Applicants/add.ctp:150
+msgid "email.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:155
+msgid "birthdate"
+msgstr ""
+
+#: View/Applicants/add.ctp:166
+msgid "birthdate.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:171
+msgid "grad"
+msgstr ""
+
+#: View/Applicants/add.ctp:176
+msgid "kyu5"
+msgstr ""
+
+#: View/Applicants/add.ctp:177
+msgid "kyu4"
+msgstr ""
+
+#: View/Applicants/add.ctp:178
+msgid "kyu3"
+msgstr ""
+
+#: View/Applicants/add.ctp:179
+msgid "kyu2"
+msgstr ""
+
+#: View/Applicants/add.ctp:180
+msgid "kyu1"
+msgstr ""
+
+#: View/Applicants/add.ctp:181
+msgid "dan1"
+msgstr ""
+
+#: View/Applicants/add.ctp:182
+msgid "dan2"
+msgstr ""
+
+#: View/Applicants/add.ctp:183
+msgid "dan3"
+msgstr ""
+
+#: View/Applicants/add.ctp:184
+msgid "dan4"
+msgstr ""
+
+#: View/Applicants/add.ctp:185
+msgid "dan5"
+msgstr ""
+
+#: View/Applicants/add.ctp:186
+msgid "dan6"
+msgstr ""
+
+#: View/Applicants/add.ctp:190
+msgid "grad.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:195
+msgid "gradingdate"
+msgstr ""
+
+#: View/Applicants/add.ctp:206
+msgid "gradingdate.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:211
+msgid "twano"
+msgstr ""
+
+#: View/Applicants/add.ctp:219
+msgid "twano.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:225
+msgid "accomodation.data"
+msgstr ""
+
+#: View/Applicants/add.ctp:227
+msgid "room"
+msgstr ""
+
+#: View/Applicants/add.ctp:241
+msgid "room.3bed"
+msgstr ""
+
+#: View/Applicants/add.ctp:242
+msgid "room.2bed"
+msgstr ""
+
+#: View/Applicants/add.ctp:246
+msgid "room.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:251
+msgid "room.together.label"
+msgstr ""
+
+#: View/Applicants/add.ctp:259
+msgid "room.together.label1"
+msgstr ""
+
+#: View/Applicants/add.ctp:269
+msgid "room.together.label2"
+msgstr ""
+
+#: View/Applicants/add.ctp:275
+msgid "essen"
+msgstr ""
+
+#: View/Applicants/add.ctp:293
+msgid "essen.meat"
+msgstr ""
+
+#: View/Applicants/add.ctp:294
+msgid "essen.veg"
+msgstr ""
+
+#: View/Applicants/add.ctp:302
+msgid "flexible"
+msgstr ""
+
+#: View/Applicants/add.ctp:319
+msgid "flexible.no"
+msgstr ""
+
+#: View/Applicants/add.ctp:319
+msgid "flexible.yes"
+msgstr ""
+
+#: View/Applicants/add.ctp:326
+msgid "additionals"
+msgstr ""
+
+#: View/Applicants/index.ctp:3
+msgid "applicants.list"
+msgstr ""
 
 #: View/Applicants/index.ctp:6
 msgid "applicants.id"
-msgstr "Nutzernummer (id)"
+msgstr ""
 
 #: View/Applicants/index.ctp:7
 msgid "applicants.week"
-msgstr "Woche"
+msgstr ""
 
 #: View/Applicants/index.ctp:8
 msgid "applicants.lastname"
-msgstr "Nachname"
+msgstr ""
 
 #: View/Applicants/index.ctp:9
 msgid "applicants.firstname"
-msgstr "Vorname"
+msgstr ""
 
 #: View/Applicants/index.ctp:10
 msgid "applicants.created"
-msgstr "Anmeldung erstellt."
+msgstr ""
 
 #: View/Applicants/index.ctp:11
 msgid "common.actions"
-msgstr "Allgemeine Aktionen"
+msgstr ""
 
 #: View/Applicants/index.ctp:27
 msgid "applicants.delete"
-msgstr "Anmeldung löschen"
+msgstr ""
 
 #: View/Applicants/index.ctp:29
 msgid "common.confirm.delete"
-msgstr "Löschen - sicher?"
+msgstr ""
 
 #: View/Elements/menu.ctp:10
 msgid "Herzogenhorn-Anmeldung"
-msgstr "Herzogenhorn Anmeldung"
+msgstr ""
 
 #: View/Elements/menu.ctp:17
 #: View/Elements/sidebar.ctp:4
 msgid "Home"
-msgstr "home"
+msgstr ""
 
 #: View/Elements/menu.ctp:18
 msgid "About"
-msgstr "Über"
+msgstr ""
 
 #: View/Elements/menu.ctp:19
 msgid "Contact"
-msgstr "Kontakt"
+msgstr ""
 
 #: View/Elements/menu.ctp:21
 msgid "applicant.form"
-msgstr "Anmeldungsmenü"
+msgstr ""
 
-#: View/Elements/menu.ctp:23
-msgid "user.form"
-msgstr "Nutzerbereich"
-
-#: View/Elements/menu.ctp:26
-msgid "user.register"
-msgstr "Nutzer registrieren"
-
-#: View/Elements/menu.ctp:28
+#: View/Elements/menu.ctp:25
 msgid "user.logout"
-msgstr "Abmelden"
+msgstr ""
+
+#: View/Elements/menu.ctp:27
+msgid "user.form"
+msgstr ""
 
 #: View/Elements/menu.ctp:30
+msgid "user.register"
+msgstr ""
+
+#: View/Elements/menu.ctp:32
 msgid "user.login"
-msgstr "Anmelden"
+msgstr ""
 
-#: View/Elements/menu.ctp:36
+#: View/Elements/menu.ctp:39
 msgid "Logged in as"
-msgstr "Angemeldet als "
-
-#: View/Elements/menu.ctp:36
-msgid "guest"
-msgstr "Gast"
+msgstr ""
 
 #: View/Elements/sidebar.ctp:3
 msgid "Sidebar"
-msgstr "Seitenbereich"
+msgstr ""
 
 #: View/Elements/sidebar.ctp:5
 msgid "Tendoryu Landesverbund Berlin"
-msgstr "tendoryu landesverband berlin"
+msgstr ""
 
 #: View/Elements/sidebar.ctp:6
 msgid "KaiShinKan"
-msgstr "KaiShinKan"
+msgstr ""
 
 #: View/Elements/sidebar.ctp:7
 msgid "PHP"
-msgstr "php"
+msgstr ""
 
 #: View/Elements/sidebar.ctp:8
 msgid "PDF-Ausschreibung"
-msgstr "PDF-Datei"
+msgstr ""
 
 #: View/Layouts/default.ctp:5
 msgid "welcome.title"
-msgstr "Herzogenhorn - Willkommen"
+msgstr ""
 
 #: View/Users/add.ctp:5
 msgid "Add User"
-msgstr "Nutzer hinzufügen"
+msgstr ""
 
 #: View/Users/add.ctp:17
 msgid "Submit"
-msgstr "Absenden"
+msgstr ""
 
 #: View/Users/index.ctp:2
 msgid "user.add"
-msgstr "Add User"
+msgstr ""
 
 #: View/Users/login.ctp:5
 msgid "Please enter your username and password"
-msgstr "Bitte Nutzername und Passwort eingeben"
+msgstr ""
 
 #: View/Users/login.ctp:11
 msgid "Login"
-msgstr "Anmeldung"
+msgstr ""
 
-#: Model/User.php:validation
-#: for field username
+#: Model/User.php:validation for field username
 msgid "A username is required"
-msgstr "Nutzername muss sein"
+msgstr ""
 
-#: Model/User.php:validation
-#: for field username
+#: Model/User.php:validation for field username
 msgid "That username is already taken"
-msgstr "Dieser Nutzername existiert bereits"
+msgstr ""
 
-#: Model/User.php:validation
-#: for field password
+#: Model/User.php:validation for field password
 msgid "A password is required"
-msgstr "Passwort wird benötigt"
+msgstr ""
 
-#: Model/User.php:validation
-#: for field password
+#: Model/User.php:validation for field password
 msgid "The passwords do not match."
-msgstr "Bitte 2x das gleiche Passwort eingeben."
+msgstr ""
 
-#: Model/User.php:validation
-#: for field role
+#: Model/User.php:validation for field role
 msgid "Please enter a valid role"
-msgstr "Gültige Rolle auswählen"
-#: View/Applicants/index.ctp:2
-msgid "applicants.add"
-msgstr "Anmeldungen hinzufügen"
-
-#: View/Applicants/index.ctp:3
-msgid "applicants.list"
-msgstr "Anmeldungen auflisten"
-
-#: View/Applicants/add.ctp:54
-msgid "firstname.label"
-msgstr "Bitte Vornamen eingeben."
-
-#: View/Applicants/add.ctp:60
-msgid "lastname"
-msgstr "Nachname"
-
-#: View/Applicants/add.ctp:68
-msgid "lastname.label"
-msgstr "Bitte Nachname eingeben."
-
-#: View/Applicants/add.ctp:73
-msgid "street"
-msgstr "Straße"
-
-# View/Applicants/add.ctp:81
-msgid "street.label"
-msgstr "Bitte Straße eingeben."
-
-#: View/Applicants/add.ctp:86
-msgid "houseno"
-msgstr "Hausnummer"
-
-#: View/Applicants/add.ctp:94
-msgid "houseno.label"
-msgstr "Bitte Hausnummer komplett eingeben."
-
-#: View/Applicants/add.ctp:99
-msgid "plz"
-msgstr "PLZ"
-
-#: View/Applicants/add.ctp:107
-msgid "plz.label"
-msgstr "Bitte Postleitzahl eingeben."
-
-#: View/Applicants/add.ctp:112
-msgid "loc"
-msgstr "Ort"
-
-#: View/Applicants/add.ctp:120
-msgid "loc.label"
-msgstr "Bitte Ort eingeben."
-
-#: View/Applicants/add.ctp:125
-msgid "email"
-msgstr "E-Mail"
-
-#: View/Applicants/add.ctp:133
-msgid "email.label"
-msgstr "Bitte E-Mail-Adresse für Bestätigungen eingeben."
-
-#: View/Applicants/add.ctp:138
-msgid "birthdate"
-msgstr "Geburtsdatum"
-
-#: View/Applicants/add.ctp:150
-msgid "birthdate.label"
-msgstr "Bitte Geburtsdatum eingeben."
-
-#: View/Applicants/add.ctp:155
-msgid "grad"
-msgstr "Graduierung"
-
-#: View/Applicants/add.ctp:160
-msgid "kyu5"
-msgstr "5.Kyu"
-
-#: View/Applicants/add.ctp:161
-msgid "kyu4"
-msgstr "4.Kyu"
-
-#: View/Applicants/add.ctp:162
-msgid "kyu3"
-msgstr "3.Kyu"
-
-#: View/Applicants/add.ctp:163
-msgid "kyu2"
-msgstr "2.Kyu"
-
-#: View/Applicants/add.ctp:164
-msgid "kyu1"
-msgstr "1.Kyu"
-
-#: View/Applicants/add.ctp:165
-msgid "dan1"
-msgstr "1.Dan"
-
-#: View/Applicants/add.ctp:166
-msgid "dan2"
-msgstr "2.Dan"
-
-#: View/Applicants/add.ctp:167
-msgid "dan3"
-msgstr "3.Dan"
-
-#: View/Applicants/add.ctp:168
-msgid "dan4"
-msgstr "4.Dan"
-
-#: View/Applicants/add.ctp:169
-msgid "dan5"
-msgstr "5.Dan"
-
-#: View/Applicants/add.ctp:170
-msgid "dan6"
-msgstr "6.Dan"
-
-#: View/Applicants/add.ctp:179
-msgid "gradingdate"
-msgstr "Datum der Graduierung"
-
-#: View/Applicants/add.ctp:193
-msgid "gradingdate.label"
-msgstr "Seit wann besteht die aktuelle Graduierung?"
-
-#: View/Applicants/add.ctp:198
-msgid "twano"
-msgstr "Mitgliedsnummer (twa)"
-
-#: View/Applicants/add.ctp:206
-msgid "twano.label"
-msgstr "Bitte die komplette twa-Mitgliedsnummer angeben (z.B. DE-0815) insofern vorhanden."
-
-#: View/Applicants/add.ctp:212
-msgid "accomodation.data"
-msgstr "Daten zur Unterkunft"
-
-#: View/Applicants/add.ctp:214
-msgid "room"
-msgstr "Zimmertyp"
-
-#: View/Applicants/add.ctp:222
-msgid "room.label"
-msgstr "Bitte die Zimmerkategorie festlegen."
-
-#: View/Applicants/add.ctp:237
-msgid "essen"
-msgstr "Bitte die Zimmerkategorie festlegen."
-
-#: View/Applicants/add.ctp:254
-msgid "flexible"
-msgstr "Kann ich im Fall einer Überbuchung in die andere Woche ausweichen?"
-
+msgstr ""
 
